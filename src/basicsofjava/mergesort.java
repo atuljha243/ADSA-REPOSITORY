@@ -55,20 +55,20 @@ public class mergesort {
                 B[k++] = A[j++];
             }
         }
-            //copy all remaining element fron A[i]to B[i]
-            while (i <= mid) {
-                B[k++] = A[i++];
-            }
-            //copy all remaining element fron A[j] to B[j]
-            while (j <= hi) {
-                B[k++] = A[j++];
-            }
-            for (i = lo, k = 0; i <= hi; i++, k++) {
-                A[i] = B[k];
-            }
-
+        //copy all remaining element fron A[i]to B[i]
+        while (i <= mid) {
+            B[k++] = A[i++];
         }
+        //copy all remaining element fron A[j] to B[j]
+        while (j <= hi) {
+            B[k++] = A[j++];
+        }
+        for (i = lo, k = 0; i <= hi; i++, k++) {
+            A[i] = B[k];
+        }
+
     }
+}
 
 
 
